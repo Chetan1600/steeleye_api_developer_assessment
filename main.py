@@ -66,7 +66,7 @@ async def Search_Trade_By_Id(trade_id: int):
             return trade
     return {"error": "Trade not found"}
 
-@app.get("/trade/counter_party/{search}")
+@app.get("/trades/counter_party/{search}")
 async def Search_Trade_By_counterparty(search : Optional[str]=None):
     matching=[]
     for i in db:
@@ -77,7 +77,7 @@ async def Search_Trade_By_counterparty(search : Optional[str]=None):
     else:
         return matching
     
-@app.get("/trade/instrumentId/{search}")
+@app.get("/trades/instrumentId/{search}")
 async def Search_Trade_By_InstrumentId(search : Optional[str]=None):
     matching=[]
     for i in db:
@@ -88,7 +88,7 @@ async def Search_Trade_By_InstrumentId(search : Optional[str]=None):
     else:
         return matching
     
-@app.get("/trade/instrumentName/{search}")
+@app.get("/trades/instrumentName/{search}")
 async def Search_Trade_By_instrumentName(search : Optional[str]=None):
     matching=[]
     for i in db:
@@ -99,7 +99,7 @@ async def Search_Trade_By_instrumentName(search : Optional[str]=None):
     else:
         return matching
 
-@app.get("/trade/trader_name/{search}")
+@app.get("/trades/trader_name/{search}")
 async def Search_Trade_By_traderName(search : Optional[str]=None):
     matching=[]
     for i in db:
@@ -110,7 +110,7 @@ async def Search_Trade_By_traderName(search : Optional[str]=None):
     else:
         return matching
     
-@app.get("/trade/advanced_filtering")
+@app.get("/trades/advanced_filtering")
 async def Advanced_filters(
     assetClass: Optional[str] = None,
     end: Optional[datetime] = None,
