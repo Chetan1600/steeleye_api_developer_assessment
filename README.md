@@ -9,10 +9,16 @@ The db variable is a list of Trade objects.
 
 The app variable is an instance of the FastAPI framework.
 
-The list_of_trades endpoint uses the get method of the app variable to define an endpoint that can be used to list all trades.
-The search_trade_by_id endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by ID.
-The search_trade_by_counterparty endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by counterparty.
-The search_trade_by_instrument_id endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by instrument ID.
-The search_trade_by_instrument_name endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by instrument name.
-The search_trade_by_trader_name endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by trader name.
-The advanced_filtering endpoint uses the get method of the app variable to define an endpoint that can be used to search for trades that meet the specified filtering criteria.
+The "list_of_trades" endpoint uses the get method of the app variable to define an endpoint that can be used to list all trades.
+
+The "search_trade_by_id" endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by ID.
+
+The "search_trade_by_counterparty" endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by counterparty.
+
+The "search_trade_by_instrument_id" endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by instrument ID.
+
+The "search_trade_by_instrument_name" endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by instrument name.
+
+The "search_trade_by_trader_name" endpoint uses the get method of the app variable to define an endpoint that can be used to search for a trade by trader name.
+
+The "advanced_filtering" endpoint uses the get method of the app variable to define an endpoint that can be used to search for trades that meet the specified filtering criteria.
