@@ -22,13 +22,6 @@ class Trade(BaseModel):
 
 app = FastAPI()
 
-# end point for List of trades 
-
-class TradesList(BaseModel):
-    trades: List[Trade]
-    #total_count: int
-
-#data_length=len(TradesList(trades=db))
 
 @app.get("/trades")
 async def list_of_trades(page_num:int = 1, page_size:int = 5):
