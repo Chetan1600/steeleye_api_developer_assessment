@@ -1,11 +1,9 @@
 # steeleye_api_developer_assessment
 API created for a trading data using fastAPI with endpoints such as list_of_all_trades, search_trade_by_id etc
 
-The code defines a number of endpoints for interacting with a trade database. These endpoints allow users to list all trades, search for trades by ID, counterparty, 
-instrument ID, instrument name, trader name, or advanced filtering criteria.
+The code defines a number of endpoints for interacting with a trade database. These endpoints allow users to list all trades, search for trades by ID, counterparty, instrument ID, instrument name, trader name, or advanced filtering criteria.
 
-The TradeDetails class defines the details of a trade, such as the price and quantity. Trade class defines details of a trade such as insturnment id, trade date,  
-asset_class, trader_name etc.
+The TradeDetails class defines the details of a trade, such as the price and quantity. Trade class defines details of a trade such as insturnment id, trade date, asset_class, trader_name etc.
 
 The db variable is a list of Trade objects.
 
